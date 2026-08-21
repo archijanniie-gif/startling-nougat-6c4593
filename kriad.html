@@ -210,10 +210,10 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 </style>
 </head>
 <body>
-<button class="theme-toggle" id="themeToggle">🌓 สลับโหมด</button>
+<button class="theme-toggle" id="themeToggle">🌓 Toggle Mode</button>
 
 <nav class="page-nav" id="pageNav">
-<button class="page-tab active" data-page="home">หน้าหลัก</button>
+<button class="page-tab active" data-page="home">Home</button>
 <button class="page-tab" data-page="dashboard">Marketing Dashboard</button>
 <button class="page-tab" data-page="diagram">System Diagram</button>
 </nav>
@@ -222,20 +222,20 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 <div class="page-view active" id="page-home">
 <div class="viz-root wrap">
 <div class="eyebrow">KRIAD · CONTENT OS BY CLAUDE COWORK</div>
-<h1>ศูนย์รวมระบบการตลาด Kriad</h1>
-<p class="sub">เลือกหน้าที่อยากดู — ทุกหน้าคือข้อมูลตัวอย่าง ปรับแก้ให้ตรงกับธุรกิจจริงได้ทุกจุด</p>
+<h1>K R I A D</h1>
+<p class="sub">Choose a page to explore — every page is sample data, edit it to match your real business anywhere</p>
 <div class="cards">
 <button class="card" data-goto="dashboard">
 <div class="card-icon">📊</div>
 <div class="card-title">Marketing Dashboard (Kriad)</div>
-<div class="card-desc">ภาพรวมธุรกิจ, คอนเทนต์+เทรนด์, ยอดขายออนไลน์, แคมเปญ&โปรโมชัน, ปฏิทินโพสต์ — เนื้อหาปรับให้ตรงกับแบรนด์วิตามิน</div>
-<div class="card-cta">เปิดดู Dashboard →</div>
+<div class="card-desc">Business overview, content + trends, online sales, Shopee, campaigns & promotions, post calendar — content tailored to a vitamin brand</div>
+<div class="card-cta">Open Dashboard →</div>
 </button>
 <button class="card" data-goto="diagram">
 <div class="card-icon">🧭</div>
-<div class="card-title">System Diagram (ตัวอย่างทั่วไป)</div>
-<div class="card-desc">ไดอะแกรมอธิบายภาพรวมว่า Claude Cowork ทำงานแทนทีมการตลาดได้อย่างไร คลิกดูรายละเอียดแต่ละส่วน</div>
-<div class="card-cta">เปิดดู Diagram →</div>
+<div class="card-title">System Diagram</div>
+<div class="card-desc">A diagram showing how Claude Cowork works as your marketing team — click any box for details</div>
+<div class="card-cta">Open Diagram →</div>
 </button>
 </div>
 </div>
@@ -245,39 +245,40 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 <div class="page-view" id="page-dashboard">
 <div class="viz-root wrap">
 <div class="sub-tabs" id="dashTabs">
-<button class="sub-tab active" data-view="overview">ภาพรวม</button>
-<button class="sub-tab" data-view="content">คอนเทนต์ + เทรนด์</button>
-<button class="sub-tab" data-view="sales">ยอดขายออนไลน์</button>
-<button class="sub-tab" data-view="ads">โฆษณา</button>
-<button class="sub-tab" data-view="promo">แคมเปญ & โปรโมชัน</button>
-<button class="sub-tab" data-view="calendar">ปฏิทินโพสต์</button>
+<button class="sub-tab active" data-view="overview">Overview</button>
+<button class="sub-tab" data-view="content">Content + Trends</button>
+<button class="sub-tab" data-view="sales">Online Sales</button>
+<button class="sub-tab" data-view="shopee">Shopee</button>
+<button class="sub-tab" data-view="ads">Ads</button>
+<button class="sub-tab" data-view="promo">Campaigns & Promotions</button>
+<button class="sub-tab" data-view="calendar">Post Calendar</button>
 </div>
 
 <div class="sub-view active" id="dv-overview">
 <div class="panel">
-<div class="panel-title">ภาพรวมธุรกิจในจอเดียว</div>
-<div class="panel-desc">Data วิเคราะห์ผล · ทำคอนเทนต์ · โฆษณา รวมในหน้าเดียว</div>
+<div class="panel-title">Your Whole Business, One Screen</div>
+<div class="panel-desc">Data analysis · content creation · ads, all in one place</div>
 <div class="core-row">
-<div class="box" style="border-color:var(--series-7)"><b>Claude</b>วิเคราะห์ + ตัดสินใจแทนทีม</div>
-<div class="box"><b>Context Memory</b>จำแบรนด์และเป้าหมาย</div>
-<div class="box"><b>Always-On</b>ทำงานต่อเนื่องอัตโนมัติ</div>
-<div class="box"><b>Connectors</b>เชื่อม FB/IG/TikTok/GA</div>
+<div class="box" style="border-color:var(--series-7)"><b>Claude</b>Analyzes + decides for your team</div>
+<div class="box"><b>Context Memory</b>Remembers your brand and goals</div>
+<div class="box"><b>Always-On</b>Keeps working automatically</div>
+<div class="box"><b>Connectors</b>Connects FB/IG/TikTok/GA</div>
 </div>
 <div class="flow-arrow">↓</div>
 <div class="flow-cols">
-<div class="box" style="border-color:var(--series-1)"><b>Data วิเคราะห์ผล</b>ยอดขาย · รีวิวลูกค้า · คู่แข่งวิตามิน</div>
-<div class="box" style="border-color:var(--series-3)"><b>ทำคอนเทนต์</b>Hook สุขภาพ · ตั้งเวลาโพสต์</div>
-<div class="box" style="border-color:var(--series-2)"><b>โฆษณา</b>Ads FB/IG/TikTok Shop</div>
+<div class="box" style="border-color:var(--series-1)"><b>Data Analysis</b>Sales · customer reviews · vitamin competitors</div>
+<div class="box" style="border-color:var(--series-3)"><b>Content Creation</b>Health hooks · post scheduling</div>
+<div class="box" style="border-color:var(--series-2)"><b>Ads</b>Ads on FB/IG/TikTok Shop</div>
 </div>
 </div>
 <div class="grid2">
 <div class="panel">
-<div class="stat-label">ยอดขาย 7 วันล่าสุด</div>
+<div class="stat-label">Sales · last 7 days</div>
 <div class="stat-value-row"><span class="stat-value">฿212,400</span><span class="stat-delta">▲ 18%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-1)" stroke-width="2" points="0,34 40,32 80,30 120,26 160,24 200,18 240,14 300,6"/></svg>
 </div>
 <div class="panel">
-<div class="stat-label">Engagement รวม 7 วันล่าสุด</div>
+<div class="stat-label">Total engagement · last 7 days</div>
 <div class="stat-value-row"><span class="stat-value">38.2K</span><span class="stat-delta">▲ 9%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-3)" stroke-width="2" points="0,30 40,28 80,32 120,22 160,24 200,16 240,20 300,10"/></svg>
 </div>
@@ -286,87 +287,126 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 
 <div class="sub-view" id="dv-content">
 <div class="panel">
-<div class="panel-title">คอนเทนต์ + เทรนด์รายวัน</div>
-<div class="panel-desc">Hook ที่เวิร์ค + caption พร้อมโพสต์ — เรียงตามจำนวนครั้งที่คู่แข่งใช้แล้วได้ผล</div>
+<div class="panel-title">Daily Content + Trends</div>
+<div class="panel-desc">Hooks that work + ready-to-post captions — ranked by how often competitors used them successfully</div>
 <div id="hookList"></div>
 </div>
 <div class="legend-row">
-<span><i style="background:var(--series-1)"></i> SWAP — สลับของเดิมเป็นของใหม่</span>
-<span><i style="background:var(--series-2)"></i> BUILD — สร้างทีละขั้น</span>
-<span><i style="background:var(--series-3)"></i> CLAIM — ยืนยันด้วยผลลัพธ์</span>
-<span><i style="background:var(--series-4)"></i> LIST — ลิสต์ข้อมูล</span>
-<span><i style="background:var(--series-5)"></i> CONTRARIAN — แย้งความเชื่อเดิม</span>
+<span><i style="background:var(--series-1)"></i> SWAP — swap the old for the new</span>
+<span><i style="background:var(--series-2)"></i> BUILD — build step by step</span>
+<span><i style="background:var(--series-3)"></i> CLAIM — back it up with results</span>
+<span><i style="background:var(--series-4)"></i> LIST — list format</span>
+<span><i style="background:var(--series-5)"></i> CONTRARIAN — challenge the belief</span>
 </div>
 </div>
 
-<!-- ============ ยอดขายออนไลน์ (NEW) ============ -->
+<!-- ============ Online Sales ============ -->
 <div class="sub-view" id="dv-sales">
 <div class="grid3">
 <div class="panel">
-<div class="stat-label">ยอดขายรวม 30 วัน</div>
+<div class="stat-label">Total sales · 30 days</div>
 <div class="stat-value-row"><span class="stat-value">฿845,900</span><span class="stat-delta">▲ 15%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-1)" stroke-width="2" points="0,36 40,33 80,34 120,28 160,26 200,20 240,18 300,8"/></svg>
 </div>
 <div class="panel">
-<div class="stat-label">จำนวนออเดอร์ 30 วัน</div>
+<div class="stat-label">Orders · 30 days</div>
 <div class="stat-value-row"><span class="stat-value">2,340</span><span class="stat-delta">▲ 11%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-3)" stroke-width="2" points="0,32 40,30 80,31 120,27 160,25 200,22 240,17 300,12"/></svg>
 </div>
 <div class="panel">
-<div class="stat-label">มูลค่าเฉลี่ยต่อออเดอร์</div>
+<div class="stat-label">Average order value</div>
 <div class="stat-value-row"><span class="stat-value">฿361</span><span class="stat-delta">▲ 4%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-2)" stroke-width="2" points="0,26 40,28 80,24 120,26 160,20 200,22 240,18 300,16"/></svg>
 </div>
 </div>
 
 <div class="panel">
-<div class="panel-title">ยอดขายแยกตามช่องทาง · 30 วันล่าสุด</div>
-<div class="panel-desc">เทียบว่าช่องทางไหนทำยอดขายได้มากที่สุด เพื่อวางแผนโฟกัสงบและแรงคอนเทนต์</div>
+<div class="panel-title">Sales by Channel · last 30 days</div>
+<div class="panel-desc">Compare which channel drives the most sales, to plan budget and content focus</div>
 <div id="channelBars"></div>
 </div>
 
 <div class="panel">
-<div class="panel-title">สินค้าขายดี Top 5 · 30 วันล่าสุด</div>
-<div class="panel-desc">เรียงตามยอดขาย (บาท) — ใช้ตัดสินใจเรื่องสต็อกและโปรโมชันรอบถัดไป</div>
+<div class="panel-title">Top 5 Best-Selling Products · last 30 days</div>
+<div class="panel-desc">Ranked by revenue (THB) — use this to plan stock and the next promotion</div>
 <table>
-<thead><tr><th>สินค้า</th><th class="num">จำนวนที่ขาย</th><th class="num">รายได้</th><th class="num">แนวโน้ม</th></tr></thead>
+<thead><tr><th>Product</th><th class="num">Units Sold</th><th class="num">Revenue</th><th class="num">Trend</th></tr></thead>
 <tbody id="topProductsTable"></tbody>
+</table>
+</div>
+</div>
+
+<!-- ============ Shopee (NEW) ============ -->
+<div class="sub-view" id="dv-shopee">
+<div class="grid3">
+<div class="panel">
+<div class="stat-label">Shopee sales · 30 days</div>
+<div class="stat-value-row"><span class="stat-value">฿254,800</span><span class="stat-delta">▲ 19%</span></div>
+<svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-2)" stroke-width="2" points="0,34 40,32 80,30 120,27 160,24 200,20 240,15 300,9"/></svg>
+</div>
+<div class="panel">
+<div class="stat-label">Shopee orders · 30 days</div>
+<div class="stat-value-row"><span class="stat-value">712</span><span class="stat-delta">▲ 13%</span></div>
+<svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-3)" stroke-width="2" points="0,32 40,31 80,29 120,26 160,23 200,20 240,16 300,11"/></svg>
+</div>
+<div class="panel">
+<div class="stat-label">Shopee ad spend · 30 days</div>
+<div class="stat-value-row"><span class="stat-value">฿18,600</span><span class="stat-delta bad">▲ 6%</span></div>
+<svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-4)" stroke-width="2" points="0,28 40,27 80,29 120,25 160,26 200,22 240,20 300,17"/></svg>
+</div>
+</div>
+
+<div class="panel">
+<div class="panel-title">Shopee Campaign Performance · last 30 days</div>
+<div class="panel-desc">Claude pulls Shopee Ads data daily and summarizes which campaign is worth the spend</div>
+<table>
+<thead><tr><th>Campaign</th><th class="num">Spend</th><th class="num">Orders</th><th class="num">Cost / Order</th><th class="num">ROAS</th></tr></thead>
+<tbody id="shopeeCampaignTable"></tbody>
+</table>
+</div>
+
+<div class="panel">
+<div class="panel-title">Top Products on Shopee · last 30 days</div>
+<div class="panel-desc">Ranked by revenue — flags which listing needs a better main image or price adjustment</div>
+<table>
+<thead><tr><th>Product</th><th class="num">Units Sold</th><th class="num">Revenue</th><th class="num">Rating</th></tr></thead>
+<tbody id="shopeeProductTable"></tbody>
 </table>
 </div>
 </div>
 
 <div class="sub-view" id="dv-ads">
 <div class="panel">
-<div class="stat-label">ลูกค้าใหม่ · 7D</div>
+<div class="stat-label">New customers · 7D</div>
 <div class="stat-value-row"><span class="stat-value">450</span><span class="stat-delta">▲ 24%</span></div>
 <svg class="sparkline" viewBox="0 0 300 46" preserveAspectRatio="none"><polyline fill="none" stroke="var(--series-2)" stroke-width="2" points="0,30 40,29 80,28 120,26 160,25 200,20 240,16 300,10"/></svg>
 </div>
 <div class="panel">
-<div class="panel-title">ผลงานแต่ละ Campaign · 7 วันล่าสุด</div>
-<div class="panel-desc">Claude ดึงข้อมูลจาก Meta Ads ทุกเช้า สรุปว่า Campaign ไหนคุ้มที่สุด Campaign ไหนควรหยุด</div>
+<div class="panel-title">Campaign Performance · last 7 days</div>
+<div class="panel-desc">Claude pulls Meta Ads data every morning and summarizes which campaign is worth it, and which to stop</div>
 <table>
-<thead><tr><th>Campaign</th><th class="num">งบที่ใช้</th><th class="num">ลูกค้า</th><th class="num">ต้นทุน/ราย</th><th class="num">ROAS</th></tr></thead>
+<thead><tr><th>Campaign</th><th class="num">Spend</th><th class="num">Customers</th><th class="num">Cost / Customer</th><th class="num">ROAS</th></tr></thead>
 <tbody id="campaignTable"></tbody>
 </table>
 </div>
 </div>
 
-<!-- ============ เปรียบเทียบแคมเปญ & โปรโมชัน (NEW) ============ -->
+<!-- ============ Campaigns & Promotions ============ -->
 <div class="sub-view" id="dv-promo">
 <div class="panel">
-<div class="panel-title">เปรียบเทียบแคมเปญโฆษณา · สรุปว่าอันไหนควรเพิ่มงบ อันไหนควรหยุด</div>
-<div class="panel-desc">Claude เทียบ ROAS และยอดขายที่เกิดจริงจากแต่ละแคมเปญ แล้วให้คำแนะนำอัตโนมัติ</div>
+<div class="panel-title">Campaign Comparison · which to scale, which to stop</div>
+<div class="panel-desc">Claude compares ROAS and actual sales from each campaign, then gives an automatic recommendation</div>
 <table>
-<thead><tr><th>Campaign</th><th class="num">งบที่ใช้</th><th class="num">ยอดขายที่ทำได้</th><th class="num">ROAS</th><th>คำแนะนำ</th></tr></thead>
+<thead><tr><th>Campaign</th><th class="num">Spend</th><th class="num">Sales Generated</th><th class="num">ROAS</th><th>Recommendation</th></tr></thead>
 <tbody id="campaignCompareTable"></tbody>
 </table>
 </div>
 
 <div class="panel">
-<div class="panel-title">เปรียบเทียบโปรโมชัน · โค้ดส่วนลดไหนคุ้มสุด</div>
-<div class="panel-desc">เทียบยอดขายที่เกิดขึ้นจริงกับต้นทุนส่วนลดที่เสียไป เพื่อเลือกใช้โปรโมชันที่ได้ผลตอบแทนดีที่สุดในรอบถัดไป</div>
+<div class="panel-title">Promotion Comparison · which discount code performs best</div>
+<div class="panel-desc">Compares actual sales generated against the discount cost, to pick the best-performing promotion next round</div>
 <table>
-<thead><tr><th>โปรโมชัน</th><th class="num">จำนวนที่ใช้โค้ด</th><th class="num">ยอดขายที่เกิดขึ้น</th><th>เทียบยอดขาย</th><th class="num">ต้นทุนส่วนลด</th></tr></thead>
+<thead><tr><th>Promotion</th><th class="num">Times Used</th><th class="num">Sales Generated</th><th>Vs. Sales</th><th class="num">Discount Cost</th></tr></thead>
 <tbody id="promoTable"></tbody>
 </table>
 </div>
@@ -374,8 +414,8 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 
 <div class="sub-view" id="dv-calendar">
 <div class="panel">
-<div class="panel-title">ปฏิทิน + ตั้งเวลาโพสต์</div>
-<div class="panel-desc">วางแผนทั้งเดือน ให้ Claude ตั้งเวลาโพสต์ให้ตามช่วงที่คนดูเยอะที่สุด</div>
+<div class="panel-title">Calendar + Post Scheduling</div>
+<div class="panel-desc">Plan the whole month — let Claude schedule posts for when your audience is most active</div>
 <div class="cal-grid" id="calGrid"></div>
 <div class="legend-row">
 <span><i style="background:var(--series-1)"></i> Reel</span>
@@ -393,15 +433,15 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 <div class="viz-root wrap">
 <div class="eyebrow">CONTENT OS · BY CLAUDE COWORK</div>
 <h1>Marketing System</h1>
-<p class="sub">กดกล่องไหนก็ได้เพื่อดูรายละเอียดว่าใช้งานจริงอย่างไร — เป็นระบบตัวอย่าง ปรับใช้กับธุรกิจของคุณได้</p>
+<p class="sub">Click any box to see how it works in practice — this is a sample system, adapt it to your own business</p>
 <div class="legend">
 <span><i class="dot" style="background:var(--series-7)"></i> Core</span>
-<span><i class="dot" style="background:var(--series-1)"></i> Data วิเคราะห์ผล</span>
-<span><i class="dot" style="background:var(--series-3)"></i> ทำคอนเทนต์</span>
-<span><i class="dot" style="background:var(--series-2)"></i> โฆษณา</span>
+<span><i class="dot" style="background:var(--series-1)"></i> Data Analysis</span>
+<span><i class="dot" style="background:var(--series-3)"></i> Content Creation</span>
+<span><i class="dot" style="background:var(--series-2)"></i> Ads</span>
 </div>
 <div class="panel">
-<div class="panel-title" style="text-align:center;">CORE · แกนของระบบ</div>
+<div class="panel-title" style="text-align:center;">CORE · The System's Foundation</div>
 <div class="icore-row" id="coreRow" style="--accent: var(--series-7); margin-top:12px;"></div>
 </div>
 <div class="flow-arrow">↓</div>
@@ -409,14 +449,14 @@ color: var(--text-primary); width: 100%; transition: box-shadow .15s ease, borde
 <div class="flow-arrow">↓</div>
 <div class="panel" style="--accent: var(--series-7);">
 <button class="ibox" id="outputBox" aria-expanded="false" style="--accent: var(--series-7);">
-<div class="ibox-title"><span class="dot"></span> OUTPUT · สิ่งที่คุณเห็นทุกเช้า</div>
-<div class="ibox-desc">ภาพรวม + รายงานสรุปทุกเช้า — ยอดขาย รายได้ คนทัก DM สิ่งที่ควรทำต่อ รวบไว้หน้าเดียว</div>
+<div class="ibox-title"><span class="dot"></span> OUTPUT · What You See Every Morning</div>
+<div class="ibox-desc">A daily summary report — sales, revenue, DMs, and what to do next, all on one page</div>
 <div class="ibox-detail" id="outputDetail">
-<p>ทุกเช้า Claude รวบรวมผลจากทั้ง 3 สาย (Data / Content / Ads) เป็นรายงานเดียวที่อ่านจบใน 2 นาที ประกอบด้วย:</p>
+<p>Every morning, Claude combines results from all 3 tracks (Data / Content / Ads) into a single report you can read in 2 minutes, including:</p>
 <ul>
-<li>สรุปตัวเลขสำคัญ: ยอดขาย, ยอด engagement, งบโฆษณาที่ใช้ไป vs ผลตอบแทน</li>
-<li>DM/คอมเมนต์ที่รอตอบ พร้อมร่างคำตอบให้เลย</li>
-<li>คำแนะนำ 1-3 ข้อว่าวันนี้ควรทำอะไรต่อ (เช่น เพิ่มงบแคมเปญที่กำลังไปได้ดี)</li>
+<li>Key numbers: sales, engagement, ad spend vs. return</li>
+<li>DMs/comments waiting for a reply, with a drafted response ready</li>
+<li>1-3 recommendations for what to do today (e.g. increase budget on a campaign that's performing well)</li>
 </ul>
 </div>
 </button>
@@ -534,12 +574,49 @@ tr.innerHTML = `
 topProductsTable.appendChild(tr);
 });
 
-/* ---------- แคมเปญ & โปรโมชัน: campaign compare ---------- */
+/* ---------- Shopee: campaign performance ---------- */
+const shopeeCampaigns = [
+{ name: 'Shopee Live · Collagen Launch', spend: 6200, orders: 168, cac: 37, roas: 7.1 },
+{ name: 'Shopee Search Ads · Vitamin D3+K2', spend: 5100, orders: 122, cac: 42, roas: 5.9 },
+{ name: 'Shopee Flash Sale · Multivitamin', spend: 4300, orders: 96, cac: 45, roas: 5.2 },
+{ name: 'Shopee Affiliate · Probiotic', spend: 3000, orders: 41, cac: 73, roas: 2.9 }
+];
+const shopeeCampaignTable = document.getElementById('shopeeCampaignTable');
+shopeeCampaigns.forEach(c => {
+const tr = document.createElement('tr');
+tr.innerHTML = `
+<td class="name">${c.name}</td>
+<td class="num">฿${c.spend.toLocaleString()}</td>
+<td class="num">${c.orders}</td>
+<td class="num">฿${c.cac}</td>
+<td class="num ${c.roas >= 4 ? 'roas-good' : ''}">${c.roas.toFixed(1)}x</td>`;
+shopeeCampaignTable.appendChild(tr);
+});
+
+/* ---------- Shopee: top products ---------- */
+const shopeeProducts = [
+{ name: 'Kriad Collagen', units: 410, revenue: 123000, rating: '4.8 ★' },
+{ name: 'Kriad Vitamin D3+K2', units: 288, revenue: 73400, rating: '4.9 ★' },
+{ name: 'Kriad Multivitamin', units: 196, revenue: 45100, rating: '4.6 ★' },
+{ name: 'Kriad Probiotic', units: 84, revenue: 20100, rating: '4.3 ★' }
+];
+const shopeeProductTable = document.getElementById('shopeeProductTable');
+shopeeProducts.forEach(p => {
+const tr = document.createElement('tr');
+tr.innerHTML = `
+<td class="name">${p.name}</td>
+<td class="num">${p.units.toLocaleString()}</td>
+<td class="num">฿${p.revenue.toLocaleString()}</td>
+<td class="num">${p.rating}</td>`;
+shopeeProductTable.appendChild(tr);
+});
+
+/* ---------- Campaigns & Promotions: campaign compare ---------- */
 const campaignCompare = [
-{ name: 'เปิดตัว Kriad Collagen', spend: 15200, sales: 97300, roas: 6.4, tag: 'good', label: 'เพิ่มงบ' },
-{ name: 'รีมาร์เก็ตติ้ง · คนเข้าเว็บไม่ซื้อ', spend: 9800, sales: 56800, roas: 5.8, tag: 'good', label: 'เพิ่มงบ' },
-{ name: 'วิดีโอรีวิวจากลูกค้าจริง', spend: 7400, sales: 30300, roas: 4.1, tag: 'watch', label: 'คงงบเดิม' },
-{ name: 'โปรวิตามิน D · TikTok Shop', spend: 5300, sales: 13800, roas: 2.6, tag: 'stop', label: 'ควรหยุด' }
+{ name: 'เปิดตัว Kriad Collagen', spend: 15200, sales: 97300, roas: 6.4, tag: 'good', label: 'Scale Up' },
+{ name: 'รีมาร์เก็ตติ้ง · คนเข้าเว็บไม่ซื้อ', spend: 9800, sales: 56800, roas: 5.8, tag: 'good', label: 'Scale Up' },
+{ name: 'วิดีโอรีวิวจากลูกค้าจริง', spend: 7400, sales: 30300, roas: 4.1, tag: 'watch', label: 'Keep Budget' },
+{ name: 'โปรวิตามิน D · TikTok Shop', spend: 5300, sales: 13800, roas: 2.6, tag: 'stop', label: 'Should Stop' }
 ];
 const campaignCompareTable = document.getElementById('campaignCompareTable');
 campaignCompare.forEach(c => {
@@ -601,25 +678,25 @@ calGrid.appendChild(cell);
 
 /* ---------- diagram data ---------- */
 const coreData = [
-{ title: 'Claude', desc: 'ตัว AI หลักที่คิด วิเคราะห์ และลงมือทำงานแทนทีมการตลาด', detail: 'Claude อ่านข้อมูลจากทุก connector ที่เชื่อมไว้ แล้วตัดสินใจว่าวันนี้ควรวิเคราะห์อะไร ทำคอนเทนต์แบบไหน หรือปรับแคมเปญโฆษณาอย่างไร' },
-{ title: 'Context Memory', desc: 'ความจำบริบทธุรกิจ แบรนด์ และเป้าหมาย', detail: 'เก็บข้อมูล เช่น กลุ่มลูกค้าเป้าหมาย โทนเสียงแบรนด์ สินค้า/บริการ เป้ายอดขาย ไว้ให้ Claude อ้างอิงทุกครั้งที่ทำงาน' },
-{ title: 'Always-On', desc: 'ตั้งให้ระบบทำงานต่อเนื่องตามเวลา ไม่ต้องสั่งใหม่ทุกครั้ง', detail: 'เทียบได้กับ scheduled task — ตั้งให้ Claude รันงานประจำ เช่น เช็กเทรนด์ทุกเช้า สรุปยอดทุกเย็น' },
-{ title: 'Connectors', desc: 'เชื่อม Claude เข้ากับเครื่องมือจริงที่ธุรกิจใช้', detail: 'เช่น Facebook/Instagram Ads Manager, Google Analytics, ระบบ CRM หรือสเปรดชีตยอดขาย' }
+{ title: 'Claude', desc: 'The core AI that thinks, analyzes, and acts for your marketing team', detail: 'Claude reads data from every connected connector, then decides what to analyze today, what content to create, or how to adjust ad campaigns' },
+{ title: 'Context Memory', desc: 'Remembers your business context, brand, and goals', detail: 'Stores things like target customer segments, brand voice, products/services, and sales goals for Claude to reference every time it works' },
+{ title: 'Always-On', desc: 'Keeps the system running on a schedule, no need to re-prompt every time', detail: 'Similar to a scheduled task — set Claude to run recurring jobs, like checking trends every morning or summarizing sales every evening' },
+{ title: 'Connectors', desc: 'Connects Claude to the real tools your business uses', detail: 'For example: Facebook/Instagram Ads Manager, Google Analytics, a CRM system, or a sales spreadsheet' }
 ];
 const columnData = [
-{ accentVar: '--series-1', head: 'Data วิเคราะห์ผล', icons: '📊 📈 🔍', items: [
-{ title: 'Analytics', detail: 'ดึงยอดเข้าชม ยอดขาย และ engagement จากทุกช่องทางมาสรุปเป็นภาพเดียว' },
-{ title: 'ติดตามคู่แข่ง', detail: 'สแกนคอนเทนต์และแคมเปญของคู่แข่งที่กำหนดไว้ สรุปว่าเขาทำอะไรได้ผลดี' },
-{ title: 'เทรนด์รายวัน', detail: 'จับกระแส/แฮชแท็กที่กำลังมาแรงในตลาดของคุณ' }
+{ accentVar: '--series-1', head: 'Data Analysis', icons: '📊 📈 🔍', items: [
+{ title: 'Analytics', detail: 'Pulls traffic, sales, and engagement from every channel into a single summary' },
+{ title: 'Competitor Tracking', detail: 'Scans content and campaigns from tracked competitors, summarizing what\'s working for them' },
+{ title: 'Daily Trends', detail: 'Catches trending topics/hashtags in your market' }
 ]},
-{ accentVar: '--series-3', head: 'ทำคอนเทนต์', icons: '✍️ 🎨', items: [
-{ title: 'คิด Hook', detail: 'ร่างไอเดีย hook/แคปชันหลายแบบจากข้อมูลเทรนด์และสไตล์แบรนด์' },
-{ title: 'ปรับแต่งคอนเทนต์', detail: 'ปรับโทนภาษา ความยาว และรูปแบบให้เหมาะกับแต่ละแพลตฟอร์ม' },
-{ title: 'ตั้งเวลาโพสต์', detail: 'จัดคิวโพสต์ตามช่วงเวลาที่กลุ่มเป้าหมายออนไลน์มากที่สุด' }
+{ accentVar: '--series-3', head: 'Content Creation', icons: '✍️ 🎨', items: [
+{ title: 'Hook Ideation', detail: 'Drafts multiple hook/caption ideas from trend data and your brand style' },
+{ title: 'Content Tailoring', detail: 'Adjusts tone, length, and format to fit each platform' },
+{ title: 'Post Scheduling', detail: 'Queues posts for when your target audience is online the most' }
 ]},
-{ accentVar: '--series-2', head: 'โฆษณา', icons: '📣 💰', items: [
-{ title: 'Ads · FB/IG', detail: 'สร้างและปรับครีเอทีฟโฆษณาให้เหมาะกับกลุ่มเป้าหมาย ทดสอบหลายเวอร์ชันพร้อมกัน' },
-{ title: 'Campaign ให้คุ้ม', detail: 'ติดตามผลตอบแทนต่องบ (ROAS) แบบเรียลไทม์' }
+{ accentVar: '--series-2', head: 'Ads', icons: '📣 💰', items: [
+{ title: 'Ads · FB/IG', detail: 'Creates and adapts ad creative for your target audience, testing multiple versions at once' },
+{ title: 'Campaign ROI', detail: 'Tracks return on ad spend (ROAS) in real time' }
 ]}
 ];
 function makeIbox(title, desc, detailHtml, accentVar) {
